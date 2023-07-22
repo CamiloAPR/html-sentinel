@@ -24,9 +24,9 @@ If this tool helped you at work consider [donating](https://ko-fi.com/E1E0NCNON)
 
 ## FAQ and Troubleshooting
 
-### The report is freezing on the browser?
+### The report is freezing on the browser
 
-// its likely that there are too many differences. This is something I to be fixed.
+// its likely that there are too many differences and the lib I'm using can't handle it. This is something I want to fix in the future.
 
 ### Is there a Roadmap for this project?
 
@@ -34,8 +34,8 @@ If this tool helped you at work consider [donating](https://ko-fi.com/E1E0NCNON)
 
 ### What do I do if I want to contribute?
 
-// Post your issues or create a Pull Request with your ideas.
+// Post your issues or create a Pull Request with your ideas :)
 
-### Why React.js for the reports isn't it a little bit overkill?
+### Why React.js for the reports? isn't it a little bit overkill?
 
 // Yes. when I first built this tool (2021) I just wanted to explore React and this seemed like a good opportunity.
