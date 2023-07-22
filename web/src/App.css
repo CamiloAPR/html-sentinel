@@ -1,0 +1,79 @@
+pre {
+  line-break: anywhere;
+}
+
+body {
+  background: #252730;
+  color: white;
+}
+h1 {
+  padding: 15px 0 15px 10px;
+  font-size: 34px;
+  text-align: center;
+  margin: 0;
+  background: #353535;
+}
+section {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-span: 10px;
+}
+
+section > div {
+  margin: 10px;
+  border: 1px solid #424242;
+  border-radius: 10px;
+  height: calc(100vh - 95px);
+  overflow-y: auto;
+}
+section .projects {
+  overflow: hidden;
+}
+
+section h2 {
+  padding: 15px 0 15px 10px;
+  font-size: 20px;
+  margin: 0;
+  background: #202020e6;
+}
+
+section .projects .test {
+  padding: 10px 15px 10px 25px;
+  font-size: 14px;
+  background: #e5e5e521;
+  transition: all 300ms ease-in;
+}
+
+section .projects .test:nth-child(odd) {
+  background: #a7a7a721;
+}
+
+section .projects .test:hover {
+  cursor: pointer;
+  background: #808080;
+}
+
+section .projects .test:nth-child(n + 2) {
+  border-top: 0.5px solid #0000003d;
+}
+
+section .projects .test:first-of-type {
+  border-top: unset;
+}
+
+section .projects .test > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .projects .test .diffs {
+  background: #b9934c;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}

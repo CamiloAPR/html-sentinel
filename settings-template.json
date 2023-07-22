@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "id": "My website",
+      "repoPath": "~/my-web",
+      "origin": {
+        "name": "Origin",
+        "domain": "http://myweb-site.local",
+        "branch": "main"
+      },
+      "target": {
+        "name": "Refactor",
+        "domain": "http://myweb-site.local",
+        "branch": "refactor"
+      },
+      "paths": [
+        "/",
+        "/?s=",
+        "/blog",
+        "/releases",
+        "/legal",
+        "/sitemap",
+        "/styles-preview"
+      ]
+    }
+  ]
+}

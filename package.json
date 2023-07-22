@@ -1,0 +1,49 @@
+{
+  "name": "html-sentinel",
+  "version": "0.0.5",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "html-format": "^1.0.2",
+    "puppeteer": "^5.4.1",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-stealth": "^2.6.5"
+  },
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "fetch": "^1.1.0",
+    "gulp": "^4.0.2",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4",
+    "sitemap-urls": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "report:start": "cd web && react-scripts start",
+    "report:build": "cd web && react-scripts build",
+    "dev": "nodemon main.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "snapshots/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
