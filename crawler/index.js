@@ -46,7 +46,10 @@ const runRegression = async (projects) => {
               timeout: 30000,
             });
             const html = await page.content();
-            const fileName = `${savePath}/${path.replace(/\//g, "--")}.html`;
+            const fileName = `${savePath}/${path.replace(
+              /(\/|\?|\&)/g,
+              "--"
+            )}.html`;
             writeFile(
               fileName,
               format(html.replaceAll(domain, "%%SITEDOMAIN%%")),

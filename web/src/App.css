@@ -69,6 +69,7 @@ section .projects .test > span {
 section .projects .test .diffs {
   background: #b9934c;
   padding: 4px 8px;
+  margin-left: 10px;
   border-radius: 8px;
   font-size: 12px;
   color: white;

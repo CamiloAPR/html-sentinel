@@ -13,7 +13,7 @@ const App = () => {
       );
       const tmp = await settingsResponse.json();
       const keys = Object.keys(tmp);
-
+      let sum = [];
       for (let i = 0; i < keys.length; i++) {
         const projectName = keys[i];
         const { versions, tests } = tmp[projectName];
@@ -22,7 +22,7 @@ const App = () => {
         let res = [];
         const paths = Object.keys(tests);
         for (let j = 0; j < paths.length; j++) {
-          const test = tests[paths[i]];
+          const test = tests[paths[j]];
           const [originHTML, targetHTML] = await fetchHtml(
             `${test[originName].split("public")[1]}`,
             `${test[targetName].split("public")[1]}`
@@ -30,13 +30,16 @@ const App = () => {
           res.push({
             origin: originHTML,
             target: targetHTML,
+            originName,
+            targetName,
             path: paths[j],
             diffCount: countDiff(originHTML, targetHTML),
           });
         }
-        setProjects([...projects, { projectName, files: res }]);
-        console.log(projects);
+        sum = [...sum, { projectName, files: res }];
       }
+
+      setProjects(sum);
     };
 
     fetchSettings();
@@ -71,6 +74,8 @@ const App = () => {
             <FileDiff
               oldCode={test.origin}
               newCode={test.target}
+              oldTitle={test.originName}
+              newTitle={test.targetName}
               fileName={test.path}
             />
           </div>

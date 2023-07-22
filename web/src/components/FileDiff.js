@@ -1,5 +1,4 @@
-import ReactDiffViewer from "react-diff-viewer";
-import { useEffect, useState } from "react";
+import ReactDiffViewer, { DiffMethod } from "react-diff-viewer";
 
 const FileDiff = ({
   oldCode,
@@ -8,19 +7,17 @@ const FileDiff = ({
   newTitle = "After",
   fileName = "",
 }) => {
-  const [isOpened, setIsOpened] = useState(false);
-
   return (
     <div>
       <h2>{fileName}</h2>
       <ReactDiffViewer
-        styles={{ visibility: isOpened ? "visible" : "hidden" }}
         extraLinesSurroundingDiff={1}
         leftTitle={oldTitle}
         rightTitle={newTitle}
         oldValue={oldCode}
         newValue={newCode}
         splitView={true}
+        compareMethod={DiffMethod.LINES}
         useDarkTheme={true}
       />
     </div>

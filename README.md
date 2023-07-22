@@ -22,7 +22,11 @@ If this tool helped you at work consider [donating](https://ko-fi.com/E1E0NCNON)
 2. Set up the web:
    2.1. install dependecies `cd ./web && npm i`.
 
-## FAQ
+## FAQ and Troubleshooting
+
+### The report is freezing on the browser?
+
+// its likely that there are too many differences. This is something I to be fixed.
 
 ### Is there a Roadmap for this project?
 

@@ -22,6 +22,18 @@
         "/sitemap",
         "/styles-preview"
       ]
+    },
+    {
+      "id": "Compare with prod",
+      "origin": {
+        "name": "Origin",
+        "domain": "http://myweb-site.local"
+      },
+      "target": {
+        "name": "Refactor",
+        "domain": "http://myweb.site"
+      },
+      "paths": ["/", "/posts", "/blog"]
     }
   ]
 }
